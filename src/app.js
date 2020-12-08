@@ -23,14 +23,14 @@ app.use(express.static(publicDirectryPath));
 app.get('',(req,res)=>{
     res.render('index',{
         title:"weather app",
-        name:"shiv"
+        name:"shivendra"
     });
 });
 
 app.get('/about',(req,res)=>{
     res.render('about',{
         title:"about",
-        name:"shiv"
+        name:"shivendra"
     });
 });
 
@@ -38,13 +38,13 @@ app.get('/help',(req,res)=>{
     res.render('help',{
         title:"Help",
         message:"Happy to help you",
-        name:"shiv"
+        name:"shivendra"
     })
 })
 
 app.get("/help/*",(req,res)=>{
     res.render("404",{
-        name:"shiv",
+        name:"shivendra",
         title:"404",
         errorMessage:"Help article not avalable"
     });
@@ -91,7 +91,7 @@ app.get('/products',(req,res)=>{
 
 app.get('*',(req,res)=>{
     res.render("404",{
-        name:"shiv",
+        name:"shivendra",
         title:"404",
         errorMessage:"Page not found"
     });
